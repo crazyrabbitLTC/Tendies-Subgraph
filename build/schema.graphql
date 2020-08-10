@@ -60,37 +60,3 @@ type Payout @entity {
   "Reward"
   reward: BigInt!
 }
-
-type Status @entity {
-  "ID is the string: STATUS"
-  id: ID!
-  "latest block processed"
-  block: BigInt!
-  "Debug"
-  debug: [Debug!]!
-  "Warning"
-  warning: [Warning!]!
-  "Info"
-  info: [Info!]!
-}
-
-type Debug @entity {
-  id: ID!
-  message: String!
-  blockNumber: BigInt!
-  timeStamp: BigInt!
-}
-
-type Warning @entity {
-  id: ID!
-  message: String!
-  blockNumber: BigInt!
-  timeStamp: BigInt!
-}
-
-type Info @entity {
-  id: ID!
-  message: String!
-  blockNumber: BigInt!
-  timeStamp: BigInt!
-}
